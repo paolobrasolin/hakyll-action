@@ -1,6 +1,6 @@
-FROM alpine:3.10
+FROM futtetennista/hakyll:latest
 
-COPY LICENSE README.md /
+# COPY LICENSE README.md /
 
 COPY entrypoint.sh /entrypoint.sh
 

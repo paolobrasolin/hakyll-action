@@ -4,8 +4,8 @@
 # time=$(date)
 # echo ::set-output name=time::$time
 
-echo "help me"
+echo "gonna build"
 
-cabal build
-cabal exec site rebuild
+stack build
+stack exec site build
 

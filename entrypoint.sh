@@ -7,6 +7,6 @@
 echo "gonna build"
 
 pwd
-stack build
-stack exec site build
+stack --allow-different-user build
+stack --allow-different-user exec site build
 

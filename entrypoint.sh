@@ -4,13 +4,8 @@
 # time=$(date)
 # echo ::set-output name=time::$time
 
-echo "gonna build"
-
-pwd
-ls -l
-ls -l /github/home/
+# /github/home/ is owned by another user, and stack refuses to create the root so we do it
 mkdir /github/home/.stack
-
-stack --allow-different-user build
-stack --allow-different-user exec site build
+stack build
+stack exec site build
 

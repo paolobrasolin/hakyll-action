@@ -7,6 +7,10 @@
 echo "gonna build"
 
 pwd
+ls -l
+ls -l /github/home/
+mkdir /github/home/.stack
+
 stack --allow-different-user build
 stack --allow-different-user exec site build
 

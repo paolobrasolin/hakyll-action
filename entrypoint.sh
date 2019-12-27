@@ -6,6 +6,6 @@
 
 # /github/home/ is owned by another user, and stack refuses to create the root so we do it
 mkdir /github/home/.stack
-stack build
-stack exec site build
+stack --allow-different-user build
+stack --allow-different-user exec site build
 
